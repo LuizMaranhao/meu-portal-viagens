@@ -1,17 +1,17 @@
+// next.config.ts
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* Configuração profissional para permitir imagens externas */
+  output: 'export', // Adicione isso para gerar arquivos HTML estáticos
   images: {
+    unoptimized: true, // Necessário para imagens funcionarem no GitHub Pages
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
-        pathname: '/**',
       },
     ],
   },
-  // O Turbopack já está ativo por padrão no seu terminal
 };
 
 export default nextConfig;
