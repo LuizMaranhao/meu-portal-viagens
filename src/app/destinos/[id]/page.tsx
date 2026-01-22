@@ -3,6 +3,12 @@ import Layout from '@/components/Layout/Layout';
 import { notFound } from 'next/navigation';
 import styles from './detalhes.module.scss'; // Certifique-se que o arquivo existe nesta pasta
 
+export async function generateStaticParams() {
+  return destinos.map((destino) => ({
+    id: destino.id.toString(),
+  }));
+}
+
 // Interface atualizada: params agora deve ser tratada como Promise
 interface RouteProps {
   params: Promise<{ id: string }>;
