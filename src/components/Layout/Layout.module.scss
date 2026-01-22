@@ -1,0 +1,45 @@
+/* Este arquivo deve ter apenas CSS/SCSS profissional */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #1a2a6c;
+  padding: 1rem 5%;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  span { color: #b8926a; }
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  a { color: white; text-decoration: none; }
+}
+
+.mainContent {
+  flex: 1;
+  padding: 2rem 5%;
+}
+
+.footer {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}

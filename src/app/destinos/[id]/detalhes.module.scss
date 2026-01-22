@@ -1,0 +1,71 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  position: relative;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  .mainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .titleOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    background: linear-gradient(transparent, rgba(26, 42, 108, 0.9));
+    color: white;
+    h1 { font-size: 3rem; margin: 0; }
+  }
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+
+  .infoBox {
+    h2 { color: #1a2a6c; margin-bottom: 20px; }
+    p { line-height: 1.8; color: #444; font-size: 1.1rem; }
+  }
+
+  .bookingCard {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    height: fit-content;
+
+    h3 { color: #1a2a6c; }
+    .price { 
+      margin: 20px 0; 
+      strong { color: #b8926a; font-size: 1.8rem; }
+    }
+  }
+}
+
+.ctaButton {
+  width: 100%;
+  background: #1a2a6c;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover { background: #b8926a; transform: scale(1.02); }
+}

@@ -1,0 +1,8 @@
+/* Limpando o padrão do Next.js para usar nosso estilo profissional */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa; /* Cinza muito claro */
+  color: #333;
+}

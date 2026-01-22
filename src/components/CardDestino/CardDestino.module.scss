@@ -1,0 +1,43 @@
+/* src/components/CardDestino/CardDestino.module.scss */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%; // Garante que todos os cards tenham a mesma altura
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 200px; // Altura fixa para todas as fotos
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Isso corta a imagem sem distorcer
+  }
+}
+
+.info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h3 { color: #1a2a6c; margin: 0; }
+  .price { color: #666; font-size: 0.9rem; }
+  .button { 
+    color: #b8926a; 
+    text-decoration: none; 
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
